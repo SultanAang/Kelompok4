@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-Page</title>
+    <title>Admin-Page/MHMD-Alif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7ab4870085.js" crossorigin="anonymous"></script>
+    <style>
+        .scrollable {
+            overflow-y: auto;
+            height: calc(100vh - 64px);
+        }
+    </style>
 </head>
-<body>
-    
+<body class="flex h-screen bg-gray-100">
+    <div class="w-64 bg-white shadow-md">
+        <div class="p-5 flex items-center bg-gray-600 space-x-9 text-gray-700">
+            <i class="fa-solid fa-user-tie fa-5x text-white"></i>
+            <h1 class="text-xl font-bold text-white">Admin</h1>
+        </div>
+        <nav class="mt-5">
+            <ul class="space-y-2">
+                <li class="flex items-center p-4 hover:bg-gray-300 text-gray-700 rounded-md transition duration-200">
+                    <i class="fa-solid fa-table-columns mr-3 text-gray-600"></i>
+                    <a href="#" class="font-medium">Dashboard</a>
+                </li>
+                <li class="flex items-center p-4 hover:bg-gray-300 text-blue-600 font-semibold rounded-md transition duration-200">
+                    <i class="fa-solid fa-images mr-3"></i>
+                    <a href="#" class="font-medium">Kelola Gambar</a>
+                </li>
+                <li class="flex items-center p-4 hover:bg-gray-300 text-gray-700 rounded-md transition duration-200">
+                    <i class="fa-solid fa-gear mr-3 text-gray-600"></i>
+                    <a href="#" class="font-medium">Pengaturan</a>
+                </li>
+                <li class="flex items-center p-4 text-gray-700 hover:bg-red-300 hover:text-red-700 rounded-md transition duration-200">
+                    <i class="fa-solid fa-right-from-bracket mr-3 hover:text-red-900"></i>
+                    <a href="#" class="font-medium">Keluar</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="flex-1 flex flex-col">
+        <header class="flex justify-between items-center p-4 bg-blue-600 text-white shadow-md">
+                <h2 class="text-lg font-bold tracking-widest">
+                    <i class="fa-solid fa-panorama"></i>
+                    PixBox
+                </h2>
+            <div class="flex items-center">
+                <i class="fa-solid fa-user-tie fa-2x text-white"></i>
+                <div class="ml-3"> 
+                    <span class="block text-sm font-semibold">Muhammad Alif</span>
+                    <span class="block text-xs text-gray-200">MHMD-Alif@admin.com</span>
+                </div>
+            </div>
+        </header>
+        <div class="scrollable p-5">
+            <h3 class="text-xl font-semibold text-blue-600">Kelola Gambar</h3>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="bg-white p-4 shadow-lg rounded border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="./img/sport.jpeg" alt="Photo" class="w-full h-32 object-cover rounded hover:scale-105 transition-transform duration-300">
+                    <h4 class="mt-2 text-center text-lg font-semibold">Olahraga</h4>
+                    <div class="flex justify-center mt-3 space-x-2">
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Hapus
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="./img/nature.jpeg" alt="Photo" class="w-full h-32 object-cover rounded hover:scale-105 transition-transform duration-300">                    
+                    <h4 class="mt-2 text-center text-lg font-semibold">Alam</h4>
+                    <div class="flex justify-center mt-3 space-x-2">
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Hapus
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="./img/car.jpeg" alt="Photo" class="w-full h-32 object-cover rounded hover:scale-105 transition-transform duration-300">                    
+                    <h4 class="mt-2 text-center text-lg font-semibold">Mobil</h4>
+                    <div class="flex justify-center mt-3 space-x-2">
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Hapus
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="./img/city.jpeg" alt="Photo" class="w-full h-32 object-cover rounded hover:scale-105 transition-transform duration-300">                    
+                    <h4 class="mt-2 text-center text-lg font-semibold">Kota</h4>
+                    <div class="flex justify-center mt-3 space-x-2">
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Hapus
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="./img/motor.jpeg" alt="Photo" class="w-full h-32 object-cover rounded hover:scale-105 transition-transform duration-300">                    
+                    <h4 class="mt-2 text-center text-lg font-semibold">Motor</h4>
+                    <div class="flex justify-center mt-3 space-x-2">
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-plus"></i>
+                            Tambah
+                        </button>
+                        <button class="flex items-center justify-center w-20 px-3 py-1.5 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition-all duration-200">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Hapus
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg border border-gray-300 transition-transform transform hover:scale-105 duration-300">
+                    <h4 class="mt-2 text-center text-xl font-bold text-gray-800">Tambah Kategori Baru</h4>
+                    <div class="flex justify-center mt-4">
+                        <button class="flex items-center justify-center w-40 px-4 py-2 border-2 border-yellow-500 text-yellow-500 bg-transparent rounded-lg hover:bg-yellow-500 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg">
+                            <i class="fa-solid fa-plus mr-2"></i>
+                            Buat
+                        </button>
+                    </div>
+                    <p class="mt-4 text-center text-gray-600 text-sm">Click Buat jika ingin menambahkan kategori baru</p>
+                </div>
+            </div>
+        <br>
+        </div>
+        </main>
+    </div>
 </body>
 </html>
