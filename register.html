@@ -1,22 +1,47 @@
-!<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-register {
+            background-image: url('foto2.jpeg'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-register h-screen flex items-center justify-center">
+    <div class="bg-white bg-opacity-50 rounded-lg shadow-lg p-8 w-96">
+        <h2 class="text-2xl font-bold text-center mb-6">Register</h2>
+        <form>
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700" for="username">Username</label>
+                <input type="text" id="username" name="username" required class="mt-1 bg-white bg-opacity-50 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-bold text-gray-700" for="email">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 bg-white bg-opacity-50 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-bold text-gray-700" for="password">Password</label>
+                <input type="password" id="password" name="password" required class="mt-1 bg-white bg-opacity-50 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-bold text-gray-700" for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="mt-1 bg-white bg-opacity-50 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Register
+                </button>
+                <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-900" href="#">
+                    Already have an account?
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
